@@ -5,14 +5,14 @@ import React,{ Component } from 'react';
 
 
 
-export default class NavBar extends Component{
+export default class Navigation extends Component{
   
   render(){
       return(
     <nav class="navbar navbar-light bg-light">
   <form class="form-inline">
 
-  <a href={`/home`}>
+  <a href={`/`}>
   <button type="button" className="btn btn-success">Admin Panel</button></a>&nbsp; &nbsp; &nbsp; &nbsp;
 
   <a href={`/add`}>

@@ -77,7 +77,7 @@ export default class Home extends Component{
                       <i className ="fas fa-edit"></i> &nbsp;update
                     </a>
                     &nbsp;
-                    <a className="btn btn-danger" href="/home" onClick={() =>this.onDelete(customers._id)}>
+                    <a className="btn btn-danger" href="/" onClick={() =>this.onDelete(customers._id)}>
                                 <i className="fa fa-trash"></i>&nbsp;Delete
                             </a>
 

@@ -18,7 +18,7 @@ export default class addCustomer extends Component{
      }
   }
 
-  handleInputChange = (e) =>{      //frontend eke form eke change ekak wnewa nm handle ekaa change wela update wenwa 
+  handleInputChange = (e) =>{      
        const{name,value} =e.target;
 
        this.setState({
@@ -61,6 +61,7 @@ export default class addCustomer extends Component{
 
 render() {
   return(
+    
     <div className="col-md-8 mt-4 mx-auto">
       <h1 className="h3 mb-3 font-weight-normal"> ADD CUSTOMERS</h1>
         <form className="needs-validation" noValidate>
@@ -128,6 +129,7 @@ render() {
               
          </form>
          </div>
+      
     
     )
   }

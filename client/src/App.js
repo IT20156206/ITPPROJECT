@@ -7,9 +7,8 @@ import addCustomer from './components/addCustomer';
 import deleteCustomer from './components/deleteCustomer';
 import editCustomer from './components/editCustomer';
 import CustomerDetails from './components/CustomerDetails';
-import search from './components/search';
-import page from './components/page';
-import NavBar from './components/NavBar';
+
+import Navigation from './components/Navigation';
 
 
 export default class App extends Component{
@@ -19,15 +18,15 @@ export default class App extends Component{
       <BrowserRouter>
       
       <div className ="container">
-         <NavBar/>
+         <Navigation/>
           
-         <Route path ="/" exact component={search}></Route>
-         <Route path ="/home" exact component={Home}></Route>
+         {/* <Route path ="/" exact component={search}></Route> */}
+         <Route path ="/" exact component={Home}></Route>
          <Route path="/add" component ={addCustomer}></Route>
          <Route path ="/delete" component={deleteCustomer}></Route>
          <Route path = "/edit/:id" component={editCustomer}></Route>
          <Route path = "/customer/:id" component={CustomerDetails}></Route>
-         <Route path ="/ss" exact component={page}></Route>
+         
         
        
       </div>
